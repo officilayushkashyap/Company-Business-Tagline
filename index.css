@@ -276,7 +276,7 @@
      left: 729px;
      top: 585px;
 
-     background: rgba(255, 255, 255, 0.79);
+     background: rgb(255, 255, 255);
      backdrop-filter: blur(45.5px);
      /* Note: backdrop-filter has minimal browser support */
      border-radius: 10px;
@@ -1050,6 +1050,20 @@
 
      }
 
+     .online-logo {
+         /* Mask group */
+
+         width: 36px;
+         height: 36px;
+
+
+         /* Inside auto layout */
+         flex: none;
+         order: 0;
+         flex-grow: 0;
+
+     }
+
      .main {
          /* Frame 579 */
 
@@ -1280,6 +1294,7 @@
 
          background: #FFFFFF;
          border-radius: 10px;
+
      }
 
      .rate {
