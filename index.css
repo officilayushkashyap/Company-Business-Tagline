@@ -17,7 +17,7 @@
      padding: 0px;
      isolation: isolate;
 
-     width: 1440px;
+     width: 100vh;
      height: 909px;
 
 
@@ -65,7 +65,6 @@
      flex-direction: row;
      justify-content: space-between;
      align-items: center;
-     padding: 0px 100px;
      gap: 70px;
 
      width: 1440px;
@@ -92,7 +91,7 @@
      flex: none;
      order: 0;
      flex-grow: 0;
-     
+
 
  }
 
@@ -104,7 +103,7 @@
      flex-direction: row;
      align-items: center;
      padding: 0px;
-     gap: 24px;
+     gap: 30px;
 
      margin: 0 auto;
      width: 519px;
@@ -752,6 +751,7 @@
  html,
  body {
      height: 100%;
+     width: 1440px;
      margin: 0;
      background: var(--bg);
      color: #111827;
@@ -797,82 +797,83 @@
 
  /* Cards grid */
  .cards {
-    /* Frame 551 */
+     /* Frame 551 */
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 20px;
+     /* Auto layout */
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     padding: 0px;
+     gap: 20px;
 
-width: 1255px;
-height: 450px;
+     width: 1255px;
+     height: 450px;
 
 
-/* Inside auto layout */
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
+     /* Inside auto layout */
+     flex: none;
+     order: 1;
+     align-self: stretch;
+     flex-grow: 0;
 
  }
 
  .card {
-   /* Frame 296 */
+     /* Frame 296 */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0px;
-gap: 18px;
+     /* Auto layout */
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 0px;
+     gap: 18px;
 
-width: 258.75px;
-height: 278px;
+     width: 258.75px;
+     height: 278px;
 
 
-/* Inside auto layout */
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
+     /* Inside auto layout */
+     flex: none;
+     order: 0;
+     align-self: stretch;
+     flex-grow: 0;
 
 
  }
 
  .illustration {
-    /* Frame 296 */
+     /* Frame 296 */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0px;
-gap: 18px;
+     /* Auto layout */
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 0px;
+     gap: 18px;
 
-width: 258.75px;
-height: 278px;
+     width: 258.75px;
+     height: 278px;
 
 
-/* Inside auto layout */
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
+     /* Inside auto layout */
+     flex: none;
+     order: 0;
+     align-self: stretch;
+     flex-grow: 0;
 
  }
- .card-img{
-    /* CMS */
 
-width: 300px;
-height: 200px;
+ .card-img {
+     /* CMS */
+
+     width: 300px;
+     height: 200px;
 
 
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
+     /* Inside auto layout */
+     flex: none;
+     order: 0;
+     flex-grow: 0;
 
  }
 
@@ -929,6 +930,586 @@ flex-grow: 0;
      }
  }
 
+ /* Move this block outside and after the previous media query */
+ @media (max-width:375px) {
+     body {
+         /* Mobile 375px */
+
+         position: relative;
+         width: 375px;
+         height: 3201px;
+         font-family: 'Figtree';
+
+         background: #FFFFFF;
+         /* Frame 582 */
+
+         /* Auto layout */
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         padding: 0px;
+
+         position: absolute;
+         width: 375px;
+         height: 3111.54px;
+         left: 0px;
+         top: 55px;
+
+
+
+     }
+
+     nav {
+         /* Frame 580 */
+
+         /* Auto layout */
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         padding: 10px 16px;
+         gap: 10px;
+
+         position: absolute;
+         width: 375px;
+         height: 54.62px;
+         left: 0px;
+         top: 0px;
+
+         background: #FFFFFF;
+         box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.11);
+
+     }
+
+     .nav-bar {
+         /* Frame 578 */
+
+         /* Auto layout */
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         padding: 0px;
+         gap: 187px;
+
+         width: 343px;
+         height: 34.62px;
+
+
+         /* Inside auto layout */
+         flex: none;
+         order: 0;
+         align-self: stretch;
+         flex-grow: 0;
+
+     }
+
+     .nav-bar ul,
+     button {
+         display: none;
+     }
+
+     .logo {
+         /* Group */
+
+         width: 125.61px;
+         height: 34.62px;
+
+
+         /* Inside auto layout */
+         flex: none;
+         order: 0;
+         flex-grow: 0;
+
+     }
+
+     .cards {
+         display: block;
+     }
+
+     header {
+         /* Frame 581 */
+
+         /* Auto layout */
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         padding: 10px 16px;
+         gap: 10px;
+
+         width: 375px;
+         height: 913px;
+
+         background: #FFE3E8;
+
+         /* Inside auto layout */
+         flex: none;
+         order: 0;
+         align-self: stretch;
+         flex-grow: 0;
+
+
+     }
+
+     .main {
+         /* Frame 579 */
+
+         /* Auto layout */
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         padding: 0px;
+         gap: 24px;
+
+         width: 340px;
+         height: 893px;
+
+
+         /* Inside auto layout */
+         flex: none;
+         order: 0;
+         flex-grow: 0;
+
+     }
+
+     .big {
+         /* Your Resume Deserves a yes let’s make it happen */
+
+         width: 340px;
+         height: 135px;
+
+         font-family: 'Figtree';
+         font-style: normal;
+         font-weight: 700;
+         font-size: 34px;
+         line-height: 42px;
+         /* or 124% */
+         text-align: center;
+         text-transform: capitalize;
+
+         /* ColorPallet/Neutral/neutral-500 */
+         color: #000000;
+
+         /* Inside auto layout */
+         flex: none;
+         order: 0;
+         align-self: stretch;
+         flex-grow: 0;
+
+
+     }
+
+     .content {
+         display: block;
+         position: static;
+         padding-top: 50px;
+         width: 375px;
+     }
+
+     .text {
+         /* If your resume isn’t getting responses, it’s time for an upgrade. Get an ATS-optimized resume crafted by HR experts to help you land more interviews. Our resumes are designed to get your foot in the door and place your name at the top of the shortlist. */
+
+         width: 340px;
+         height: 204px;
+
+         font-family: 'Figtree';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 34px;
+         /* or 212% */
+         text-align: center;
+         text-transform: capitalize;
+
+         /* ColorPallet/Neutral/neutral-500 */
+         color: #000000;
+
+
+         /* Inside auto layout */
+         flex: none;
+         order: 1;
+         align-self: stretch;
+         flex-grow: 0;
+
+     }
+
+     .line {
+         display: none;
+     }
+
+     .btn {
+         /* Frame 32 */
+
+         /* Auto layout */
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+         align-content: center;
+         padding: 0px;
+         gap: 24px;
+
+         width: 340px;
+         height: 116px;
+
+
+         /* Inside auto layout */
+         flex: none;
+         order: 2;
+         align-self: stretch;
+         flex-grow: 0;
+
+     }
+
+     .girl {
+         /* Group 3 */
+
+         position: absolute;
+         width: 318.96px;
+         height: 366px;
+         left: 11.05px;
+
+
+     }
+
+     .try {
+         /* Frame 579 */
+
+         /* Auto layout */
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         padding: 0px;
+         gap: 24px;
+
+         width: 340px;
+         height: 893px;
+
+
+         /* Inside auto layout */
+         flex: none;
+         order: 0;
+         flex-grow: 0;
+
+     }
+
+     .girl {
+
+         /* Group 156 */
+
+         width: 330.13px;
+         height: 366px;
+
+
+         /* Inside auto layout */
+         flex: none;
+         order: 3;
+         flex-grow: 0;
+     }
+
+     .hero-image {
+         /* Group 12 */
+
+         position: absolute;
+         width: 319.08px;
+         height: 366px;
+         left: 11.05px;
+
+
+
+
+     }
+
+     .photo {
+         /* portrait-happy-young-woman-standing-with-backpack-holding-books-mobile-phone-isolated-white-wall-removebg-preview 1 */
+
+         position: absolute;
+         width: 254.61px;
+         height: 365.82px;
+         left: 33.69px;
+         top: 527px;
+
+         background: url(portrait-happy-young-woman-standing-with-backpack-holding-books-mobile-phone-isolated-white-wall-removebg-preview.png);
+
+     }
+
+     .circle-2 {
+         /* Ellipse 5 */
+
+         position: absolute;
+         width: 239.74px;
+         height: 239.74px;
+         left: 50.92px;
+         top: 613.39px;
+
+         background: radial-gradient(50.11% 50.11% at 50.11% 49.89%, #FECDD5 0%, #FFE2E7 100%)
+             /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+         ;
+
+     }
+
+     .circle-1 {
+         /* Ellipse 6 */
+
+         position: absolute;
+         width: 318.96px;
+         height: 318.96px;
+         left: 11.05px;
+         top: 574.04px;
+
+         background: radial-gradient(55.26% 55.26% at 50% 44.74%, #FFE4E9 0%, #FFCBD4 100%);
+
+     }
+
+     .online {
+         /* Frame 239 */
+
+         /* Auto layout */
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         padding: 30px 16px;
+         gap: 20px;
+
+         position: absolute;
+         width: 153.28px;
+         height: 67.26px;
+         left: 176.85px;
+         top: 800.72px;
+
+         background: #FFFFFF;
+         border-radius: 10px;
+     }
+
+     .rate {
+         /* Frame 239 */
+
+         /* Auto layout */
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         padding: 20px 15px;
+         gap: 8px;
+
+         position: absolute;
+         width: 179.87px;
+         height: 64.4px;
+         left: 0px;
+         top: 727.99px;
+
+         background: rgba(255, 255, 255, 0.79);
+         backdrop-filter: blur(45.5px);
+         /* Note: backdrop-filter has minimal browser support */
+         border-radius: 10px;
+
+     }
+
+
+     .page {
+         /* Frame 557 */
+
+         /* Auto layout */
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding: 40px 0px;
+         gap: 26px;
+
+         width: 375px;
+         height: 2198.54px;
+
+
+         /* Inside auto layout */
+         flex: none;
+         order: 1;
+         align-self: stretch;
+         flex-grow: 0;
+
+     }
+
+     .pill {
+         /* Frame 546 */
+
+         /* Auto layout */
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding: 0px;
+         gap: 25px;
+
+         width: 375px;
+         height: 42px;
+
+
+         /* Inside auto layout */
+         flex: none;
+         order: 0;
+         align-self: stretch;
+         flex-grow: 0;
+
+     }
+
+     .hero h1 {
+         /* Frame 554 */
+
+         /* Auto layout */
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding: 0px;
+         gap: 25px;
+
+         width: 375px;
+         height: 146.54px;
+
+
+         /* Inside auto layout */
+         flex: none;
+         order: 1;
+         align-self: stretch;
+         flex-grow: 0;
+
+     }
+
+     .card {
+         /* Frame 297 */
+
+         /* Auto layout */
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         padding: 20px;
+         gap: 24px;
+
+         width: 298.75px;
+         height: 450px;
+
+         background: #FFFFFF;
+         box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+         border-radius: 20px;
+
+         /* Inside auto layout */
+         flex: none;
+         order: 2;
+         flex-grow: 0;
+     }
+
+     .card-2 {
+
+         /* Frame 558 */
+
+         /* Auto layout */
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         padding: 20px;
+         gap: 24px;
+
+         width: 298.75px;
+         height: 450px;
+
+         background: #FFFFFF;
+         box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+         border-radius: 20px;
+
+         /* Inside auto layout */
+         flex: none;
+         order: 3;
+         flex-grow: 0;
+
+
+     }
+
+     .card-3 {
+         /* Frame 555 */
+
+         /* Auto layout */
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         padding: 20px;
+         gap: 24px;
+
+         width: 298.75px;
+         height: 450px;
+
+         background: #FFFFFF;
+         box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+         border-radius: 20px;
+
+         /* Inside auto layout */
+         flex: none;
+         order: 4;
+         flex-grow: 0;
+
+     }
+
+     .card-4 {
+         /* Frame 553 */
+
+         /* Auto layout */
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         padding: 20px;
+         gap: 24px;
+
+         width: 298.75px;
+         height: 450px;
+
+         background: #FFFFFF;
+         box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+         border-radius: 20px;
+
+         /* Inside auto layout */
+         flex: none;
+         order: 5;
+         flex-grow: 0;
+
+     }
+
+ }
+
+ /* Responsive sidebar menu for mobile screens */
+ @media (max-width: 640px) {
+     .sidebar-menu {
+         width: 90%;
+         max-width: 320px;
+         right: 0;
+         left: auto;
+         padding: 16px 0;
+         font-size: 1em;
+     }
+
+     .sidebar-menu .header {
+         padding: 0 16px 16px 16px;
+     }
+
+     .sidebar-menu .menu-items li a {
+         padding: 12px 16px;
+         font-size: 1em;
+     }
+
+     .contact-btn {
+         margin: 0 16px 16px 16px;
+         padding: 12px 16px;
+         font-size: 1em;
+     }
+
+     .open-btn {
+         top: 12px;
+         left: 12px;
+         padding: 8px 16px;
+         font-size: 15px;
+     }
+
+     .overlay {
+         z-index: 99;
+     }
+ }
+
  /* small decorative bottom border to mimic screenshot */
  .page::after {
      content: "";
@@ -951,155 +1532,176 @@ flex-grow: 0;
 
 
  }
+
  /* Basic Reset and Setup */
-body {
-    margin: 0;
-    background-color: #f4f4f9; /* Light background for the main page */
-}
+ body {
+     margin: 0;
+     background-color: #f4f4f9;
+     /* Light background for the main page */
+ }
 
-/* --- Sidebar Menu Styles --- */
-.sidebar-menu {
-    /* Fixed positioning to overlay the page */
-    position: fixed;
-    top: 0;
-    right: 0; /* Or right: 0; if you want it on the right side */
-    width: 80%; /* Takes up 80% of the screen width */
-    max-width: 350px; /* Optional: Sets a max width for larger screens */
-    height: 100%;
-    background-color: #ffffff; /* White/light background for the menu */
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
-    z-index: 100; /* Ensure it's above other content */
-    padding: 20px 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    /* Transition for sliding animation */
-    transition: transform 0.3s ease-in-out;
-    /* Start hidden off-screen */
-    transform: translateX(-100%);
-}
+ /* --- Sidebar Menu Styles --- */
+ .sidebar-menu {
+     /* Fixed positioning to overlay the page */
+     position: fixed;
+     top: 0;
+     right: 0;
+     /* Or right: 0; if you want it on the right side */
+     width: 80%;
+     /* Takes up 80% of the screen width */
+     max-width: 350px;
+     /* Optional: Sets a max width for larger screens */
+     height: 100%;
+     background-color: #ffffff;
+     /* White/light background for the menu */
+     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+     z-index: 100;
+     /* Ensure it's above other content */
+     padding: 20px 0;
+     box-sizing: border-box;
+     display: flex;
+     flex-direction: column;
+     /* Transition for sliding animation */
+     transition: transform 0.3s ease-in-out;
+     /* Start hidden off-screen */
+     transform: translateX(-100%);
+ }
 
-/* Active state (when open) */
-.sidebar-menu.active {
-    transform: translateX(0);
-}
+ /* Active state (when open) */
+ .sidebar-menu.active {
+     transform: translateX(0);
+ }
 
-/* --- Header Section (Logo & Close Button) --- */
-.header {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px 20px 20px;
-    border-bottom: 1px solid #eee;
-}
+ /* --- Header Section (Logo & Close Button) --- */
+ .header {
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 20px 20px 20px;
+     border-bottom: 1px solid #eee;
+ }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+ .logo-container {
+     display: flex;
+     align-items: center;
+ }
 
-/* Placeholder for the Logo Image */
-
-
-.company-text {
-    line-height: 1;
-}
-
-.company-name {
-    font-size: 1.1em;
-    font-weight: bold;
-    color: #C02C40; /* Red color from the image */
-    margin: 0;
-}
-
-.business-tagline {
-    font-size: 0.7em;
-    color: #666;
-    margin: 0;
-}
-
-.close-btn {
-    background: none;
-    border: none;
-    font-size: 1.8em;
-    color: #C02C40; /* Red 'X' color */
-    cursor: pointer;
-    padding: 0;
-}
-
-/* --- Menu Items List --- */
-.menu-items {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    flex-grow: 1; /* Allows the menu to take up available space */
-}
-
-.menu-items li a {
-    display: flex;
-    align-items: center;
-    padding: 15px 20px;
-    text-decoration: none;
-    color: #333; /* Text color */
-    font-size: 1.1em;
-    border-top: 1px solid transparent; /* To prevent movement on hover */
-    border-bottom: 1px solid transparent; /* To prevent movement on hover */
-    transition: background-color 0.2s;
-}
-
-.menu-items li a:hover {
-    background-color: #f7f7f7;
-    /* Optional: Slight color change for visual feedback */
-}
-
-.menu-items li a i {
-    font-size: 1.4em;
-    width: 30px; /* Gives space for the icon */
-    margin-right: 15px;
-    /* Custom icon colors from the image (approximation) */
-    color: #C02C40;
-}
-
-/* --- Contact Button --- */
-.contact-btn {
-    display: block; /* Makes the button take full width */
-    text-align: center;
-    margin: 0 20px 20px 20px; /* Space around the button */
-    padding: 15px 20px;
-    background-color: #E63946; /* A prominent red for the button */
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: background-color 0.2s;
-}
-
-.contact-btn:hover {
-    background-color: #C02C40; /* Slightly darker red on hover */
-}
-
-/* --- Overlay Background --- */
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
-    z-index: 90;
-    display: none; /* Start hidden */
-}
+ /* Placeholder for the Logo Image */
 
 
-/* --- Button to open the menu (for demonstration) --- */
-.open-btn {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
+ .company-text {
+     line-height: 1;
+ }
+
+ .company-name {
+     font-size: 1.1em;
+     font-weight: bold;
+     color: #C02C40;
+     /* Red color from the image */
+     margin: 0;
+ }
+
+ .business-tagline {
+     font-size: 0.7em;
+     color: #666;
+     margin: 0;
+ }
+
+ .close-btn {
+     background: none;
+     border: none;
+     font-size: 1.8em;
+     color: #C02C40;
+     /* Red 'X' color */
+     cursor: pointer;
+     padding: 0;
+ }
+
+ /* --- Menu Items List --- */
+ .menu-items {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     flex-grow: 1;
+     /* Allows the menu to take up available space */
+ }
+
+ .menu-items li a {
+     display: flex;
+     align-items: center;
+     padding: 15px 20px;
+     text-decoration: none;
+     color: #333;
+     /* Text color */
+     font-size: 1.1em;
+     border-top: 1px solid transparent;
+     /* To prevent movement on hover */
+     border-bottom: 1px solid transparent;
+     /* To prevent movement on hover */
+     transition: background-color 0.2s;
+ }
+
+ .menu-items li a:hover {
+     background-color: #f7f7f7;
+     /* Optional: Slight color change for visual feedback */
+ }
+
+ .menu-items li a i {
+     font-size: 1.4em;
+     width: 30px;
+     /* Gives space for the icon */
+     margin-right: 15px;
+     /* Custom icon colors from the image (approximation) */
+     color: #C02C40;
+ }
+
+ /* --- Contact Button --- */
+ .contact-btn {
+     display: block;
+     /* Makes the button take full width */
+     text-align: center;
+     margin: 0 20px 20px 20px;
+     /* Space around the button */
+     padding: 15px 20px;
+     background-color: #E63946;
+     /* A prominent red for the button */
+     color: white;
+     text-decoration: none;
+     font-weight: bold;
+     border-radius: 8px;
+     /* Rounded corners */
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     /* Subtle shadow for depth */
+     transition: background-color 0.2s;
+ }
+
+ .contact-btn:hover {
+     background-color: #C02C40;
+     /* Slightly darker red on hover */
+ }
+
+ /* --- Overlay Background --- */
+ .overlay {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     /* Semi-transparent dark overlay */
+     z-index: 90;
+     display: none;
+     /* Start hidden */
+ }
+
+
+ /* --- Button to open the menu (for demonstration) --- */
+ .open-btn {
+     position: fixed;
+     top: 20px;
+     left: 20px;
+     padding: 10px 20px;
+     font-size: 16px;
+     cursor: pointer;
+ }
