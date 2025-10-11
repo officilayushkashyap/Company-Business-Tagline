@@ -658,7 +658,6 @@
 
  .page {
      max-width: var(--container-w);
-     margin: 48px auto;
      padding: 24px;
  }
 
@@ -824,7 +823,7 @@
          height: 3201px;
          font-family: 'Figtree';
          background: #FFFFFF;
-         overflow: auto;
+         overflow: none;
      }
 
      .menu-logo {
@@ -890,7 +889,7 @@
      }
 
      .nav-menu {
-         position: absolute;
+         position: fixed;
          width: 375px;
          height: 680px;
          right: 0px;
@@ -927,12 +926,17 @@
 
      }
 
+     .sidebar li :hover {
+         color: red
+     }
+
      .side-btn button {
          display: flex;
          flex-direction: row;
          flex-wrap: wrap;
          align-items: center;
          align-content: flex-start;
+         position: absolute;
          padding: 0px;
          gap: 40px;
          width: 282px;
@@ -993,6 +997,11 @@
          order: 0;
          align-self: stretch;
          flex-grow: 0;
+     }
+
+     .nav-btn {
+         gap: 0;
+         width: auto;
      }
 
      .nav-bar ul,
