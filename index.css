@@ -4,6 +4,9 @@
      box-sizing: border-box;
      font-family: 'Figtree';
  }
+button{
+    cursor: pointer;
+}
 
  header {
      display: flex;
@@ -200,7 +203,7 @@
  }
 
  .logo {
-     margin: 0 auto;
+     margin: 0 100px;
      width: 231.17px;
      height: 58px;
      flex: none;
@@ -269,38 +272,6 @@
      flex-grow: 0;
  }
 
- .get-btn {
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     align-items: center;
-     padding: 14px 22px;
-     gap: 10px;
-     width: 147px;
-     height: 46px;
-     background: #FA1239;
-     border: none;
-     box-shadow: 0px 0px 12px rgba(250, 18, 57, 0.58);
-     border-radius: 30px;
-     flex: none;
-     order: 0;
-     flex-grow: 0;
- }
-
- .get {
-     width: 103px;
-     height: 22px;
-     font-family: 'Figtree';
-     font-style: normal;
-     font-weight: 500;
-     font-size: 18px;
-     line-height: 22px;
-     text-transform: capitalize;
-     color: #FFFFFF;
-     flex: none;
-     order: 0;
-     flex-grow: 0;
- }
 
  .main {
      width: 1440px;
@@ -313,59 +284,7 @@
      z-index: 0;
  }
 
- .rating {
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     align-items: center;
-     padding: 20px 15px;
-     gap: 20px;
-     position: absolute;
-     width: 350px;
-     height: 117px;
-     left: 729px;
-     top: 585px;
-     background: rgb(255, 255, 255);
-     backdrop-filter: blur(45.5px);
-     border-radius: 10px;
- }
 
- .rate {
-     width: 101px;
-     height: 77px;
-     font-family: 'Inter';
-     font-style: normal;
-     font-weight: 600;
-     font-size: 64px;
-     line-height: 77px;
-     text-transform: capitalize;
-     color: #1CB098;
-     flex: none;
-     order: 0;
-     flex-grow: 0;
- }
-
- .star-rate {
-     display: flex;
-     flex-direction: column;
-     align-items: flex-start;
-     padding: 0px;
-     gap: 11px;
-     width: 199px;
-     height: 56.35px;
-     flex: none;
-     order: 1;
-     flex-grow: 0;
- }
-
- .star {
-     width: 17.12px;
-     height: 16.35px;
-     flex: none;
-     order: 0;
-     flex-grow: 0;
-
- }
 
  .write {
      width: 199px;
@@ -401,6 +320,39 @@
 
  .red {
      color: red;
+ }
+
+ .get-btn {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     padding: 14px 22px;
+     gap: 10px;
+     width: 147px;
+     height: 46px;
+     background: #FA1239;
+     border: none;
+     box-shadow: 0px 0px 12px rgba(250, 18, 57, 0.58);
+     border-radius: 30px;
+     flex: none;
+     order: 0;
+     flex-grow: 0;
+ }
+
+ .get {
+     width: auto;
+     height: 22px;
+     font-family: 'Figtree';
+     font-style: normal;
+     font-weight: 500;
+     font-size: 18px;
+     line-height: 22px;
+     text-transform: capitalize;
+     color: #FFFFFF;
+     flex: none;
+     order: 0;
+     flex-grow: 0;
  }
 
  .big {
@@ -502,43 +454,7 @@
      border: none;
  }
 
- .circle-1,
- .circle-2,
- .photo {
-     position: absolute;
-     border-radius: 50%;
- }
 
- .circle-1 {
-     position: absolute;
-     width: 633.87px;
-     height: 633.88px;
-     left: 766px;
-     top: 283.49px;
-     background: radial-gradient(55.26% 55.26% at 50% 44.74%, #FFE4E9 0%, #FFCBD4 100%);
-     z-index: 0;
- }
-
- .circle-2 {
-     position: absolute;
-     width: 476.45px;
-     height: 476.45px;
-     left: 845.23px;
-     top: 361.68px;
-     background: radial-gradient(50.11% 50.11% at 50.11% 49.89%, #FECDD5 0%, #FFE2E7 100%);
-     z-index: 1;
- }
-
- .photo {
-     position: absolute;
-     width: 506px;
-     height: 727px;
-     left: 811px;
-     top: 190px;
-     background: url(portrait-happy-young-woman-standing-with-backpack-holding-books-mobile-phone-isolated-white-wall-removebg-preview.png);
-     border-radius: 0px;
-     z-index: 2;
- }
 
  .online {
      display: flex;
@@ -613,23 +529,16 @@
 
  }
 
- .rate {
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     align-items: center;
-     padding: 20px 15px;
-     gap: 20px;
+ .girl {
+     /* Group 12 */
+
      position: absolute;
-     width: 350px;
-     height: 117px;
-     left: 729px;
-     top: 585px;
-     background: white;
-     backdrop-filter: blur(45.5px);
-     border-radius: 10px;
-     z-index: 4;
-     order: 0;
+     width: 633.87px;
+     height: 727.37px;
+     left: 766px;
+     top: 190px;
+
+
  }
 
  :root {
@@ -659,6 +568,18 @@
  .page {
      max-width: var(--container-w);
      padding: 24px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     padding: 0px;
+     gap: 50px;
+     position: relative;
+     width: 1255px;
+     height: 678px;
+     left: 100px;
+     top: 50px;
+
+
  }
 
  .pill {
@@ -897,6 +818,15 @@
          background: rgba(0, 0, 0, 0.7);
      }
 
+     .side-logo img {
+         width: 125.61px;
+         height: 34.62px;
+         flex: none;
+         order: 0;
+         flex-grow: 0;
+     }
+
+
      .sidebar ul {
          display: flex;
          flex-direction: row;
@@ -926,7 +856,8 @@
 
      }
 
-     .sidebar li :hover {
+     .sidebar li,
+     :hover {
          color: red
      }
 
@@ -945,6 +876,40 @@
          order: 1;
          align-self: stretch;
          flex-grow: 0;
+     }
+
+     .cont-btn {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         padding: 14px 22px;
+         gap: 10px;
+         width: 282px;
+         height: 46px;
+         background: #FA1239;
+         box-shadow: 0px 0px 12px rgba(250, 18, 57, 0.58);
+         border-radius: 30px;
+         border: none;
+         flex: none;
+         order: 0;
+         flex-grow: 1;
+     }
+
+     .cont {
+         width: 113px;
+         height: 22px;
+         font-family: 'Figtree';
+         font-style: normal;
+         font-weight: 500;
+         font-size: 18px;
+         line-height: 22px;
+         text-transform: uppercase;
+         color: #FFFFFF;
+         flex: none;
+         order: 0;
+         flex-grow: 0;
+         padding-top: 10px;
      }
 
      .sidebar a {
@@ -991,7 +956,7 @@
          align-items: center;
          padding: 0px;
          gap: 187px;
-         width: 343px;
+         width: 359px;
          height: 34.62px;
          flex: none;
          order: 0;
@@ -1009,12 +974,14 @@
          display: none;
      }
 
+     .logo img,
      .logo {
          width: 125.61px;
          height: 34.62px;
          flex: none;
          order: 0;
          flex-grow: 0;
+         margin: 0;
      }
 
 
@@ -1023,7 +990,7 @@
          display: flex;
          flex-direction: row;
          align-items: center;
-         padding: 10px 16px;
+         padding-top: 10px;
          gap: 10px;
          width: 375px;
          height: 913px;
@@ -1045,13 +1012,15 @@
      .main {
          display: flex;
          flex-direction: column;
-         align-items: flex-start;
-         padding: 0px;
-         gap: 24px;
-         width: 340px;
-         height: 893px;
+         align-items: center;
+         padding: 10px 16px;
+         gap: 10px;
+         width: 375px;
+         height: 913px;
+         background: #FFE3E8;
          flex: none;
          order: 0;
+         align-self: stretch;
          flex-grow: 0;
      }
 
@@ -1076,7 +1045,7 @@
          display: block;
          position: static;
          padding-top: 50px;
-         width: 375px;
+         width: 359px;
      }
 
      .text {
@@ -1117,12 +1086,16 @@
          flex-grow: 0;
      }
 
-     .girl {
-         position: absolute;
-         width: 318.96px;
+     .girl,
+     .girl img {
+         width: 330.13px;
          height: 366px;
-         left: 11.05px;
+         flex: none;
+         order: 3;
+         flex-grow: 0;
+         position: static;
      }
+
 
      .try {
          display: flex;
@@ -1138,48 +1111,10 @@
 
      }
 
-     .girl {
-         width: 330.13px;
-         height: 366px;
-         flex: none;
-         order: 3;
-         flex-grow: 0;
-     }
 
-     .hero-image {
-         position: absolute;
-         width: 319.08px;
-         height: 366px;
-         left: 11.05px;
 
-     }
 
-     .photo {
-         position: absolute;
-         width: 254.61px;
-         height: 365.82px;
-         left: 33.69px;
-         top: 527px;
-         background: url(portrait-happy-young-woman-standing-with-backpack-holding-books-mobile-phone-isolated-white-wall-removebg-preview.png);
-     }
 
-     .circle-2 {
-         position: absolute;
-         width: 239.74px;
-         height: 239.74px;
-         left: 50.92px;
-         top: 613.39px;
-         background: radial-gradient(50.11% 50.11% at 50.11% 49.89%, #FECDD5 0%, #FFE2E7 100%);
-     }
-
-     .circle-1 {
-         position: absolute;
-         width: 318.96px;
-         height: 318.96px;
-         left: 11.05px;
-         top: 574.04px;
-         background: radial-gradient(55.26% 55.26% at 50% 44.74%, #FFE4E9 0%, #FFCBD4 100%);
-     }
 
      .online {
          display: flex;
@@ -1197,22 +1132,7 @@
          border-radius: 10px;
      }
 
-     .rate {
-         display: flex;
-         flex-direction: row;
-         justify-content: center;
-         align-items: center;
-         padding: 20px 15px;
-         gap: 8px;
-         position: absolute;
-         width: 179.87px;
-         height: 64.4px;
-         left: 0px;
-         top: 727.99px;
-         background-color: rgb(255, 255, 255);
-         backdrop-filter: blur(45.5px);
-         border-radius: 10px;
-     }
+
 
      .page {
          display: flex;
@@ -1226,6 +1146,7 @@
          order: 1;
          align-self: stretch;
          flex-grow: 0;
+         position: static;
      }
 
      .pill {
