@@ -4,9 +4,10 @@
      box-sizing: border-box;
      font-family: 'Figtree';
  }
-button{
-    cursor: pointer;
-}
+
+ button {
+     cursor: pointer;
+ }
 
  header {
      display: flex;
@@ -286,22 +287,6 @@ button{
 
 
 
- .write {
-     width: 199px;
-     height: 29px;
-     font-family: 'Figtree';
-     font-style: normal;
-     font-weight: 600;
-     font-size: 24px;
-     line-height: 29px;
-     text-transform: capitalize;
-     color: #000000;
-     flex: none;
-     order: 1;
-     align-self: stretch;
-     flex-grow: 0;
-
- }
 
 
  .content {
@@ -456,32 +441,8 @@ button{
 
 
 
- .online {
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     align-items: center;
-     padding: 30px;
-     gap: 20px;
-     position: absolute;
-     width: 270.66px;
-     height: 133.43px;
-     left: 1129px;
-     top: 734px;
-     background: #FFFFFF;
-     border-radius: 10px;
-     z-index: 3;
- }
-
- .online-logo {
-     width: 80px;
-     height: 80px;
-     flex: none;
-     order: 0;
-     flex-grow: 0;
 
 
- }
 
  .cont {
      display: flex;
@@ -500,8 +461,6 @@ button{
 
 
  .girl {
-     /* Group 12 */
-
      position: absolute;
      width: 633.87px;
      height: 727.37px;
