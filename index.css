@@ -495,39 +495,9 @@ button{
      flex-grow: 0;
  }
 
- .two {
-     width: 124px;
-     height: 36px;
-     font-family: 'Figtree';
-     font-style: normal;
-     font-weight: 800;
-     font-size: 30px;
-     line-height: 36px;
-     text-transform: capitalize;
-     color: #000000;
-     flex: none;
-     order: 0;
-     align-self: stretch;
-     flex-grow: 0;
 
- }
 
- .online-resume {
-     width: 124px;
-     height: 40px;
-     font-family: 'Figtree';
-     font-style: normal;
-     font-weight: 500;
-     font-size: 17px;
-     line-height: 20px;
-     text-transform: capitalize;
-     color: #666666;
-     flex: none;
-     order: 1;
-     align-self: stretch;
-     flex-grow: 0;
 
- }
 
  .girl {
      /* Group 12 */
@@ -572,7 +542,6 @@ button{
      flex-direction: column;
      align-items: flex-start;
      padding: 0px;
-     gap: 50px;
      position: relative;
      width: 1255px;
      height: 678px;
@@ -1001,14 +970,6 @@ button{
          flex-grow: 0;
      }
 
-     .online-logo {
-         width: 36px;
-         height: 36px;
-         flex: none;
-         order: 0;
-         flex-grow: 0;
-     }
-
      .main {
          display: flex;
          flex-direction: column;
@@ -1110,29 +1071,6 @@ button{
          flex-grow: 0;
 
      }
-
-
-
-
-
-
-     .online {
-         display: flex;
-         flex-direction: row;
-         justify-content: center;
-         align-items: center;
-         padding: 30px 16px;
-         gap: 20px;
-         position: absolute;
-         width: 180.25px;
-         height: 67.26px;
-         left: 176.85px;
-         top: 800.72px;
-         background: #FFFFFF;
-         border-radius: 10px;
-     }
-
-
 
      .page {
          display: flex;
@@ -1287,11 +1225,6 @@ button{
      align-items: center;
      padding: 0 20px 20px 20px;
      border-bottom: 1px solid #eee;
- }
-
- .logo-container {
-     display: flex;
-     align-items: center;
  }
 
  main {
